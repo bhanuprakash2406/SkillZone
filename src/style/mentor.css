@@ -1,0 +1,137 @@
+.mentor{
+    width: 98%;
+    min-height: 100vh;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.mentor .mentor_head{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mentor .mentor_head small{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: green;
+    font-weight: bold;
+}
+.mentor .mentor_head h2{
+    margin: 1rem 0;
+}
+.mentor .mentor_head p{
+    width: 40%;
+    text-align: center;
+    color: rgb(125, 124, 124);
+}
+.mentor .mentor_list{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+.mentor .mentor_list .card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+    width: 260px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    border-radius: 30px;  
+    transform: scale(1);
+    transition: transform 0.4s cubic-bezier(0.25,0.8,0.25,1),
+              box-shadow 0.4s ease;
+
+}
+.mentor .mentor_list .card:hover{
+    transform: scale(1.02) translateY(-1px);
+}
+.mentor .mentor_list .card img{
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid orange;
+    margin: .5rem;
+}
+.mentor .mentor_list .card .img{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.mentor .mentor_list .card .img small{
+    position: absolute;
+    color: white;
+    padding: 5px 10px;
+    background-color: orange;
+    border-radius: 20px;
+    font-weight: bold;
+    display: flex;
+    gap: 5px;
+}
+.mentor .mentor_list .card .name h3{
+    font-size: 15px;
+}
+.mentor .mentor_list .card .name span{
+    font-size: 13px;
+    color: rgb(129, 129, 129);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.mentor .mentor_list .card p{
+    color: rgb(129, 129, 129);
+    font-size: 14px;
+    padding: 5px 10px;
+}
+.mentor .mentor_list .card .foot{
+    display: flex;
+    justify-content: center;
+}
+.mentor .mentor_list .card .foot p{
+    padding: 0;
+    margin: 0;
+}
+.mentor .mentor_list .card .foot span{
+    font-weight: bold;
+    color: black;
+    margin: 0 4px;
+}
+.mentor .mentor_list .card .icons{
+    display: flex;
+    margin: 10px 0;
+    justify-content: center;
+    gap: 1rem;
+}
+.mentor .mentor_list .card .icons .icon{
+    padding: 5px;
+    border-radius: 50%;
+    background-color: rgb(237, 235, 235);
+    color: rgb(110, 109, 109);
+}
+@media (max-width:1100px){
+    .mentor .mentor_list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 1rem;
+    }
+        .mentor .mentor_list .card{
+        margin: auto;
+        width: 80%;
+    }
+}
+@media (max-width:700px){
+    .mentor{
+        margin-left: 1rem;
+    }
+    .mentor .mentor_list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .mentor .mentor_list .card{
+        margin: auto;
+        width: 60%;
+    }
+    .mentor .mentor_head{
+        margin-left: 2rem;
+    }
+    .mentor .mentor_head p{
+        width: 96%;
+    }
+}

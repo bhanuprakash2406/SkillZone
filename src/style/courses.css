@@ -1,0 +1,170 @@
+.courses{
+    width: 98%;
+    min-height: 110vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.courses .couse_head{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.courses .couse_head small{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: green;
+    font-weight: bold;
+}
+.courses .couse_head h2{
+    margin: 1rem 0;
+}
+.courses .couse_head p{
+    width: 40%;
+    text-align: center;
+    color: rgb(125, 124, 124);
+}
+.courses .course_list {
+    display: flex;
+    justify-content: space-around;
+}
+.courses .course_list .card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 260px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    border-radius: 30px;  
+    transform: scale(1);
+    transition: transform 0.4s cubic-bezier(0.25,0.8,0.25,1),
+              box-shadow 0.4s ease;
+
+}
+.courses .course_list .card:hover{
+    transform: scale(1.02) translateY(-1px);
+    box-shadow:0 18px 35px rgba(0,0,0,0.25);
+}
+.courses .course_list .card .img small{
+    position: absolute;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 4px;
+    border-radius: 15px;
+    margin: 10px;
+    font-size: 11px;
+    letter-spacing: .5px;
+    font-weight: 600;
+}
+.courses .course_list .card .img img{
+    width: 260px;
+    height: 240px;
+    border-radius: 30px 30px 0 0;
+}
+.courses .course_list .card .con{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0 1rem;
+    border-bottom: 1px solid gray;
+}
+.courses .course_list .card .con h4{
+    margin: .5rem 0;
+}
+.courses .course_list .card .con .profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+.courses .course_list .card .con .profile p{
+    color: rgb(130, 129, 129);
+    font-size: 14px;
+}
+.courses .course_list .card .con img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.courses .course_list .card ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    gap: 1rem;
+}
+.courses .course_list .card li{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-size: 13px;
+    gap: 3px;
+    color: rgb(132, 132, 132);
+}
+.courses .course_list .card .foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+.courses .course_list .card .foot button{
+    width: 100px;
+    height: 40px;
+    color: green;
+    gap: 2px;
+    align-items: center;
+    display: flex;
+    border: none;
+    background-color: transparent;
+}
+.course_btn{
+    font-weight: 600;
+    font-size: 15px;
+    width: 200px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .2rem;
+    background-color: transparent;
+}
+.course_btn:hover{
+    color: white;
+    background-color: black;
+}
+@media (max-width:1100px){
+    .courses .course_list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 1rem;
+    }
+    .courses .course_list .card{
+        margin: auto;
+        width: 80%;
+    }
+    .courses .course_list .card .img img{
+        width: 99%;
+    }
+}
+@media (max-width:700px){
+    .courses .course_list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .courses .course_list .card{
+        margin: auto;
+        width: 80%;
+    }
+}
+@media (max-width:500px){
+    .courses{
+        margin: 4rem auto;
+        margin-left: 1rem;
+    }
+    .courses .couse_head p{
+        width: 96%;
+    }
+}

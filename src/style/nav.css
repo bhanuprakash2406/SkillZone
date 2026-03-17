@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.nav{
+    position: sticky;
+    width: 97%;
+    height: 90px;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    padding: 2px 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav .main{
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(245, 245, 245);
+    width: 95%;
+    top: 10%;
+    padding: 10px 0;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+}
+.PiListBold{
+    display: none;
+}
+.nav .title{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.nav .title p{
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.nav .title .SiHyperskill{
+    font-size: 1.5rem;
+}
+.nav .list ul{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+.nav .list ul li{
+    text-decoration: none;
+    outline: none;
+}
+.nav .list ul li a{
+    text-decoration: none;
+    outline: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+.nav .list .active{
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: orange;
+}
+.nav .list ul li a:hover{
+    color: white;
+    background-color: orange;
+}
+.nav button{
+    outline: none;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(33, 214, 33);
+    color: white;
+    font-weight: 600;
+}
+.open_list{
+    display: flex;
+    position: absolute;
+    background: rgba(242, 241, 241, 0.55);
+    width: 90%;
+    left: 50%;
+    top: 320%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    list-style-type: none;
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px 0;
+}
+.open_list li{
+    text-decoration: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 5px;
+}
+.open_list li a{
+    text-decoration: none;
+    outline: none;
+}
+.open_list li:hover{
+    color: white;
+    background-color: orange;
+}
+@media (max-width:950px){
+    .nav .list ul{
+        display: none;
+    }
+    .nav .main{
+        left: 49%;
+        width: 90%;
+        padding: 10px;
+    }
+    .nav .end{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .PiListBold {
+        display: flex;
+        font-size: 1.5rem;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid grey;
+    }
+}
+@media (max-width:500px){
+    .nav{
+        height: 70px;
+    }
+    .nav .main{
+        top: 7%;
+        margin-left:5px;
+    }
+    .nav .title p{
+        font-size: 1.3rem;
+    }
+    .nav .title .SiHyperskill{
+        font-size: 1.2rem;
+    }
+}
