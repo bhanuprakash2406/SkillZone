@@ -5,7 +5,7 @@ import des from '../media/course-img-2.jpg'
 import data from '../media/course-img-3.jpg'
 import dig from '../media/course-img-4.jpg'
 import dev1 from '../media/avatar-6.png'
-import des1 from '../media/avatar-5.jpg'
+import des1 from '../media/avatar-7.jpg'
 import data1 from '../media/avatar-9.jpeg'
 import dig1 from '../media/avatar-10.jpeg'
 import { IoIosStar } from "react-icons/io";
@@ -58,7 +58,7 @@ const Course = () => {
                     <h4>UI/UX Design</h4>
                     <div className='profile'>
                     <img src={des1} alt='Design'/>
-                    <p>Parvathi</p>
+                    <p>Nirmala</p>
                     </div>
                     <ul>
                         <li><CiClock2 />8 weeks</li>

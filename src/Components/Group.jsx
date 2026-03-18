@@ -7,12 +7,12 @@ import { PiBellRingingLight } from "react-icons/pi";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { FaRegHandshake } from "react-icons/fa";
 import photo1 from '../media/avatar-6.png'
-import photo2 from '../media/avatar-5.jpg'
+import photo2 from '../media/avatar-7.jpg'
 import photo3 from '../media/avatar-9.jpeg'
 import photo4 from '../media/avatar-10.jpeg'
 import photo5 from '../media/photo2.jpeg'
 import photo6 from '../media/photo6.jpeg'
-import photo7 from '../media/photo7.jpg'
+import photo7 from '../media/avatar-5.jpg'
 import photo8 from '../media/photo3.jpeg'
 import photo9 from '../media/photo1.jpeg'
 

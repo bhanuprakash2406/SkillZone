@@ -67,12 +67,12 @@ const Footer = () => {
         <div className='sec-two'>
           <p>Follow us on</p>
           <ul>
-            <li><FaFacebook className='icon' style={{backgroundColor:'white', color:'blue'}}/></li>
-            <li><RiInstagramFill className='icon' style={{background: 'white', color:'#fd1d1d' }}/></li>
-            <li><FaLinkedin className='icon' style={{backgroundColor:'white', color:'#084f78'}}/></li>
-            <li><FaXTwitter className='icon' style={{backgroundColor:'white', color:'black'}}/></li>
-            <li><FaTelegram className='icon' style={{backgroundColor:'white', color:'#0994e4'}}/></li>
-            <li><FaYoutube className='icon' style={{backgroundColor:'white', color:'red'}}/></li>
+            <li><FaFacebook className='icon' style={{ color:'blue'}}/></li>
+            <li><RiInstagramFill className='icon' style={{color:'#fd1d1d' }}/></li>
+            <li><FaLinkedin className='icon' style={{color:'#084f78'}}/></li>
+            <li><FaXTwitter className='icon' style={{color:'black'}}/></li>
+            <li><FaTelegram className='icon' style={{color:'#0994e4'}}/></li>
+            <li><FaYoutube className='icon' style={{color:'red'}}/></li>
           </ul>
         </div>
       </div>

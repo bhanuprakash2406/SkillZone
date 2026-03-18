@@ -1,7 +1,7 @@
 import React from 'react'
 import '../style/mentor.css'
 import dev1 from '../media/avatar-6.png'
-import des1 from '../media/avatar-5.jpg'
+import des1 from '../media/avatar-7.jpg'
 import data1 from '../media/avatar-9.jpeg'
 import dig1 from '../media/avatar-10.jpeg'
 import { IoIosStar } from "react-icons/io";
@@ -45,7 +45,7 @@ const Mentor = () => {
                 <small>4.8<IoIosStar /></small>
               </div>
               <div className='name'>
-                <h3>Parvathi</h3>
+                <h3>Nirmala</h3>
                 <span>Graphic Design Artist</span>
               </div>
               <p>3+ years experience in graphic design and visual arts. Former Creative Director at Adobe.</p>
