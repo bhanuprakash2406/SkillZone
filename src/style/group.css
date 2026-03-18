@@ -101,9 +101,9 @@
     box-shadow:0 18px 35px rgba(0,0,0,0.25);
 }
 .group .group_list .top{
-    margin: -35px 7%;
-    right: 30px;
     min-width: 160px;
+    margin: -40px -1%;
+    right: 10%;
 }
 .group .group_list .bottom{
     min-width: 160px;
@@ -143,6 +143,7 @@
 @media (max-width:1090px){
     .group{
         flex-direction: column;
+        align-items: center;
     }
     .group .detials{
         width: 92%;
@@ -156,13 +157,13 @@
         text-align: center;
     }
     .group .group_list{
-        width: 90%;
+        width: 70%;
+        padding: 0 2rem;
     }
-    .group .group_list .bottom{
-        margin: -20px -5%;
-    }
-    .group .group_list .top{
-        margin: -35px -5%;
+    .group .group_list .data{
+        position: relative;
+        margin: 1rem auto;
+        inset: 0;
     }
 }
 @media (max-width:580px){
@@ -170,7 +171,7 @@
         width: 100%;
     }
      .group .group_list{
-        min-width: 87%;
+        min-width: 80%;
     }
     .group .group_list .album{
     display: grid;
@@ -178,11 +179,6 @@
     }
     .group .detials  .group_head p{
         width: 100%;
-    }
-    .group .group_list .data{
-        position: relative;
-        margin: 1rem auto;
-        inset: 0;
     }
     .group .detials .group_data ul{
         grid-template-columns: repeat(1,310px);
