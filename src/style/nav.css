@@ -138,6 +138,9 @@ body{
     }
 }
 @media (max-width:500px){
+    body{
+        margin-right:-1rem ;
+    }
     .nav{
         height: 80px;
     }
