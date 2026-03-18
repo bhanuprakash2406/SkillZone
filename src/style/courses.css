@@ -1,7 +1,6 @@
 .courses{
-    width: 98%;
-    min-height: 110vh;
-    margin: auto;
+    width: 100%;
+    margin: 2rem auto;
     display: flex;
     flex-direction: column;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -160,10 +159,6 @@
     }
 }
 @media (max-width:500px){
-    .courses{
-        margin: 4rem auto;
-        margin-left: 1rem;
-    }
     .courses .couse_head p{
         width: 96%;
     }
