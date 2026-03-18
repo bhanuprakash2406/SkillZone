@@ -1,6 +1,5 @@
 .testimonials{
-    width: 98%;
-    min-height: 100vh;
+    width: 100%;
     margin: 2rem auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -74,9 +73,6 @@
     color: rgb(154, 154, 154);
 }
 @media (max-width:950px){
-    .testimonials{
-        margin-left: 1rem;
-    }
     .testimonials .test_list{
         grid-template-columns: repeat(1, 1fr);
     }

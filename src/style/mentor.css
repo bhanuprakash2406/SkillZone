@@ -1,7 +1,6 @@
 .mentor{
-    width: 98%;
-    min-height: 100vh;
-    margin: auto;
+    width: 100%;
+    margin: 2rem auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .mentor .mentor_head{
@@ -10,7 +9,6 @@
     flex-direction: column;
     align-items: center;
 }
-
 .mentor .mentor_head small{
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -117,9 +115,6 @@
     }
 }
 @media (max-width:700px){
-    .mentor{
-        margin-left: 1rem;
-    }
     .mentor .mentor_list{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
